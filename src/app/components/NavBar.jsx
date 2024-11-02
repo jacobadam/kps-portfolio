@@ -9,24 +9,37 @@ const NavBar = () => {
 
   return (
     <div>
-      <header className="bg-white">
+      <header className="bg-[#10172A]">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-          <div>Katie Shevlin</div>
+          <div className="text-white">Katie Shevlin</div>
 
           <div className="flex flex-1 items-center justify-center">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <Link href="/">Home</Link>
+                  <Link href="/" className="text-white">
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/about">About</Link>
+                  <Link href="/about" className="text-white">
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/services">Services</Link>
+                  <Link href="/services" className="text-white">
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/portfolio">Portfolio</Link>
+                  <Link href="/portfolio" className="text-white">
+                    Portfolio
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="text-white">
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -71,26 +84,43 @@ const NavBar = () => {
 
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white shadow-lg">
+          <div className="md:hidden bg-[#10172A] shadow-lg">
             <ul className="flex flex-col items-center gap-6 text-sm p-4">
               <li>
-                <Link href="/" onClick={toggleMenu}>
+                <Link href="/" className="text-white" onClick={toggleMenu}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" onClick={toggleMenu}>
+                <Link href="/about" className="text-white" onClick={toggleMenu}>
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/services" onClick={toggleMenu}>
+                <Link
+                  href="/services"
+                  className="text-white"
+                  onClick={toggleMenu}
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" onClick={toggleMenu}>
+                <Link
+                  href="/portfolio"
+                  className="text-white"
+                  onClick={toggleMenu}
+                >
                   Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-white"
+                  onClick={toggleMenu}
+                >
+                  Contact
                 </Link>
               </li>
             </ul>
