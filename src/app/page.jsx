@@ -88,6 +88,15 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="flex justify-center mt-8">
+            <a
+              href="/services"
+              className="text-white text-center hover:underline"
+            >
+              Learn more about my services here.
+            </a>
+          </div>
         </div>
       </section>
     </section>
