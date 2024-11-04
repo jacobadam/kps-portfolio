@@ -8,7 +8,6 @@ export default function Home() {
           backgroundImage: `url(/test-image2.webp)`,
         }}
       ></div>
-
       {/* Profile Image Overlay */}
       <div className="absolute w-48 h-48 rounded-full border border-[#E8E3F4] top-[15vh] left-1/2 transform -translate-x-1/2 overflow-hidden">
         <img
@@ -17,7 +16,6 @@ export default function Home() {
           alt="Profile"
         />
       </div>
-
       {/* Content Section */}
       <div className="bg-white flex flex-col items-center justify-center mt-28">
         <div className="items-center px-8 mx-auto max-w-7xl lg:px-16 md:px-12 text-center">
@@ -36,69 +34,63 @@ export default function Home() {
           </button>
         </div>
       </div>
-
-      <div className="flex-grow"></div>
-
       {/* Value Prop */}
-      <section className="text-[#10172A] bg-[#B0B0B0] body-font">
-        <div className="container px-5 2xl:py-8 mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="p-4 flex sm:justify-center">
-              <div className="flex flex-col items-center text-center px-4 h-full">
-                <h2 className="text-[#10172A] title-font font-bold mb-2">
-                  Engagement
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Drawing out relatable, compelling stories that captivate and
-                  connect with your audience.
-                </p>
-              </div>
-            </div>
-            <div className="p-4 flex sm:justify-center">
-              <div className="flex flex-col  items-center text-center px-4 h-full">
-                <h2 className="text-[#10172A] title-font font-bold mb-2">
-                  Strategy
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Aligning content with your marketing objectives for maximum
-                  impact.
-                </p>
-              </div>
-            </div>
-            <div className="p-4 flex sm:justify-center ">
-              <div className="flex flex-col items-center text-center px-4 h-full">
-                <h2 className="text-[#10172A] title-font font-bold mb-2">
-                  Reach
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Using SEO techniques to drive organic traffic and get your
-                  content in front of the right people.
-                </p>
-              </div>
-            </div>
-            <div className="p-4 flex sm:justify-center ">
-              <div className="flex flex-col items-center text-center px-4 h-full">
-                <h2 className="text-[#10172A] title-font font-bold mb-2">
-                  Performance
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Tracking analytics to continually optimise content and drive
-                  success.
-                </p>
-              </div>
+      <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6 relative z-10 pb-4">
+        {/* Card grid */}
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Card 1 */}
+          <div className="group relative bg-[#B0B0B0] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu shadow-2xl">
+            <div className="space-y-2 text-center">
+              <h5 className="text-xl font-semibold text-[#10172A] transition-colors group-hover:font-extrabold group-hover:underline">
+                Engagement
+              </h5>
+              <p className="text-[#10172A] transition-colors group-hover:text-gray-800">
+                Drawing out relatable, compelling stories that captivate and
+                connect with your audience.
+              </p>
             </div>
           </div>
 
-          <div className="flex justify-center">
-            <a
-              href="/services"
-              className="text-[#10172A] text-center font-semibold hover:underline"
-            >
-              Learn more about my services here.
-            </a>
+          {/* Card 2 */}
+          <div className="group relative bg-[#B0B0B0] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu shadow-2xl">
+            <div className="space-y-2 text-center">
+              <h5 className="text-xl font-semibold text-[#10172A] transition-colors group-hover:font-extrabold group-hover:underline">
+                Strategy
+              </h5>
+              <p className="text-[#10172A] transition-colors group-hover:text-gray-800">
+                Aligning content with your marketing objectives for maximum
+                impact.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="group relative bg-[#B0B0B0] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu shadow-2xl">
+            <div className="space-y-2 text-center">
+              <h5 className="text-xl font-semibold text-[#10172A] transition-colors group-hover:font-extrabold group-hover:underline">
+                Reach
+              </h5>
+              <p className="text-[#10172A] transition-colors group-hover:text-gray-800">
+                Using SEO techniques to drive organic traffic and get your
+                content in front of the right people.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="group relative bg-[#B0B0B0] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu shadow-2xl">
+            <div className="space-y-2 text-center">
+              <h5 className="text-xl font-semibold text-[#10172A] transition-colors group-hover:font-extrabold group-hover:underline">
+                Performance
+              </h5>
+              <p className="text-[#10172A] transition-colors group-hover:text-gray-800">
+                Tracking analytics to continually optimise content and drive
+                success.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 }
