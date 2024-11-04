@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <header className="bg-[#10172A]">
+      <header className="bg-[#172754]">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
           <div className="text-white">Katie Shevlin</div>
 
@@ -84,7 +84,7 @@ const NavBar = () => {
 
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-[#10172A] shadow-lg">
+          <div className="md:hidden bg-[#172754] shadow-lg">
             <ul className="flex flex-col items-center gap-6 text-sm p-4">
               <li>
                 <Link href="/" className="text-white" onClick={toggleMenu}>
