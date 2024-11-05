@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <section className="relative flex flex-col h-full">
@@ -34,85 +36,95 @@ export default function Home() {
         {/* Card grid */}
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {/* Card 1 */}
-          <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu ">
-            <div className="flex flex-col items-center">
-              <div className="flex items-center space-x-2">
-                <img
-                  src="/handshake.svg"
-                  alt="Handshake Icon"
-                  className="w-6 h-6"
-                />
-                <h5 className="text-l font-semibold text-portfolio transition-colors group-hover:font-bold ">
-                  Engagement
-                </h5>
+          <Link href="/services" passHref>
+            <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu block h-full">
+              <div className="flex flex-col items-center h-full">
+                <div className="flex items-center space-x-2">
+                  <img
+                    src="/handshake.svg"
+                    alt="Handshake Icon"
+                    className="w-6 h-6"
+                  />
+                  <h5 className="text-l font-semibold text-portfolio transition-colors group-hover:font-bold ">
+                    Engagement
+                  </h5>
+                </div>
+                <p className="text-portfolio text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
+                  Drawing out relatable, compelling stories that captivate and
+                  connect with your audience
+                </p>
               </div>
-              <p className="text-portfolio text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
-                Drawing out relatable, compelling stories that captivate and
-                connect with your audience
-              </p>
             </div>
-          </div>
+          </Link>
+
           {/* Card 2 */}
-          <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu ">
-            <div className="flex flex-col items-center">
-              <div className="flex items-center space-x-2">
-                <img src="/brain.svg" alt="Brain Icon" className="w-6 h-6" />{" "}
-                <h5 className="text-l font-semibold text-portfolio transition-colors group-hover:font-bold ">
-                  Strategy
-                </h5>
+          <Link href="/services" passHref>
+            <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu block h-full">
+              <div className="flex flex-col items-center h-full">
+                <div className="flex items-center space-x-2">
+                  <img src="/brain.svg" alt="Brain Icon" className="w-6 h-6" />{" "}
+                  <h5 className="text-l font-semibold text-portfolio transition-colors group-hover:font-bold ">
+                    Strategy
+                  </h5>
+                </div>
+                <p className="text-portfolio text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
+                  Aligning content with your marketing objectives for maximum
+                  impact
+                </p>
               </div>
-              <p className="text-portfolio text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
-                Aligning content with your marketing objectives for maximum
-                impact
-              </p>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 */}
-          <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu ">
-            <div className="flex flex-col items-center">
-              <div className="flex items-center space-x-2">
-                <img src="/eye.svg" alt="Eye Icon" className="w-6 h-6" />{" "}
-                <h5 className="text-l font-semibold text-portfolio transition-colors group-hover:font-bold ">
-                  Reach
-                </h5>
+          <Link href="/services" passHref>
+            <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu block h-full">
+              <div className="flex flex-col items-center h-full">
+                <div className="flex items-center space-x-2">
+                  <img src="/eye.svg" alt="Eye Icon" className="w-6 h-6" />{" "}
+                  <h5 className="text-l font-semibold text-portfolio transition-colors group-hover:font-bold ">
+                    Reach
+                  </h5>
+                </div>
+                <p className="text-portfolio text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
+                  Using SEO techniques to drive organic traffic and get your
+                  content in front of the right people
+                </p>
               </div>
-              <p className="text-portfolio text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
-                Using SEO techniques to drive organic traffic and get your
-                content in front of the right people
-              </p>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 */}
-          <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu ">
-            <div className="flex flex-col items-center">
-              <div className="flex items-center space-x-2">
-                <img
-                  src="/chart2.svg"
-                  alt="Performance Icon"
-                  className="w-6 h-6"
-                />{" "}
-                <h5 className="text-l font-semibold text-portfolio transition-colors group-hover:font-bold ">
-                  Performance
-                </h5>
+          <Link href="/services" passHref>
+            <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu block h-full">
+              <div className="flex flex-col items-center h-full">
+                <div className="flex items-center space-x-2">
+                  <img
+                    src="/chart2.svg"
+                    alt="Performance Icon"
+                    className="w-6 h-6"
+                  />{" "}
+                  <h5 className="text-l font-semibold text-portfolio transition-colors group-hover:font-bold ">
+                    Performance
+                  </h5>
+                </div>
+                <p className="text-portfolio text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
+                  Tracking analytics to continually optimise content and drive
+                  success
+                </p>
               </div>
-              <p className="text-portfolio text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
-                Tracking analytics to continually optimise content and drive
-                success
-              </p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 
+      {/* CTA */}
       <div className="flex flex-col flex-grow items-center justify-center mt-8 mb-8">
-        <a
+        <Link
           href="/contact"
           className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-stone-100 bg-portfolio border rounded-lg focus:outline-none"
         >
           Get in touch
-        </a>
+        </Link>
       </div>
     </section>
   );
