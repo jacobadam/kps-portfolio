@@ -84,7 +84,7 @@ const NavBar = () => {
 
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-[#172754] shadow-lg">
+          <div className="md:hidden bg-portfolio shadow-lg">
             <ul className="flex flex-col items-center gap-6 text-sm p-4">
               <li>
                 <Link href="/" className="text-stone-100" onClick={toggleMenu}>
