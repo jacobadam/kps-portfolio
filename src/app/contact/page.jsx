@@ -3,10 +3,23 @@ import React from "react";
 export const Contact = () => {
   return (
     <section id="contact-form" className="flex-grow">
-      <div className="py-12 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-portfolio">
-          Contact Me
-        </h2>
+      <header className="border-b border-gray-200 bg-slate-200">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <div className="flex flex-col items-start justify-center gap-4 md:flex-row md:items-center">
+            <div>
+              <h1 className="text-2xl font-bold text-portfolio sm:text-3xl text-center">
+                Contact
+              </h1>
+
+              <p className="mt-1.5 text-sm text-gray-500">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                recusandae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div className="py-12 lg:py-8 px-4 mx-auto max-w-screen-md">
         <form action="#" className="space-y-8">
           <div>
             <label

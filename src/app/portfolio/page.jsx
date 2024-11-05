@@ -1,15 +1,24 @@
 export default function Portfolio() {
   return (
     <section className="flex-grow">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-portfolio">
-            Porfolio
-          </h2>
-          <p className="font-light text-portfolio sm:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
+      <header className="border-b border-gray-200 bg-slate-200">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <div className="flex flex-col items-start justify-center gap-4 md:flex-row md:items-center">
+            <div>
+              <h1 className="text-2xl font-bold text-portfolio sm:text-3xl text-center">
+                Portfolio
+              </h1>
+
+              <p className="mt-1.5 text-sm text-gray-500">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                recusandae.
+              </p>
+            </div>
+          </div>
         </div>
+      </header>
+
+      <div className="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6">
         <div className="grid gap-8 lg:grid-cols-4">
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <img
