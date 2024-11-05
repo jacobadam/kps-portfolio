@@ -35,24 +35,33 @@ export default function Home() {
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {/* Card 1 */}
           <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu ">
-            <div className="space-y-2 text-center">
-              <h5 className="text-l font-semibold text-[#172754] transition-colors group-hover:font-bold ">
-                Engagement
-              </h5>
-              <p className="text-[#172754] text-sm font-light transition-colors group-hover:text-gray-800">
+            <div className="flex flex-col items-center">
+              <div className="flex items-center space-x-2">
+                <img
+                  src="/handshake.svg"
+                  alt="Handshake Icon"
+                  className="w-6 h-6"
+                />
+                <h5 className="text-l font-semibold text-[#172754] transition-colors group-hover:font-bold ">
+                  Engagement
+                </h5>
+              </div>
+              <p className="text-[#172754] text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
                 Drawing out relatable, compelling stories that captivate and
                 connect with your audience
               </p>
             </div>
           </div>
-
           {/* Card 2 */}
           <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu ">
-            <div className="space-y-2 text-center">
-              <h5 className="text-l font-semibold text-[#172754] transition-colors group-hover:font-bold ">
-                Strategy
-              </h5>
-              <p className="text-[#172754] text-sm font-light transition-colors group-hover:text-gray-800">
+            <div className="flex flex-col items-center">
+              <div className="flex items-center space-x-2">
+                <img src="/brain.svg" alt="Brain Icon" className="w-6 h-6" />{" "}
+                <h5 className="text-l font-semibold text-[#172754] transition-colors group-hover:font-bold ">
+                  Strategy
+                </h5>
+              </div>
+              <p className="text-[#172754] text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
                 Aligning content with your marketing objectives for maximum
                 impact
               </p>
@@ -60,12 +69,15 @@ export default function Home() {
           </div>
 
           {/* Card 3 */}
-          <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu">
-            <div className="space-y-2 text-center">
-              <h5 className="text-l font-semibold text-[#172754] transition-colors group-hover:font-bold ">
-                Reach
-              </h5>
-              <p className="text-[#172754] text-sm font-light transition-colors group-hover:text-gray-800">
+          <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu ">
+            <div className="flex flex-col items-center">
+              <div className="flex items-center space-x-2">
+                <img src="/eye.svg" alt="Eye Icon" className="w-6 h-6" />{" "}
+                <h5 className="text-l font-semibold text-[#172754] transition-colors group-hover:font-bold ">
+                  Reach
+                </h5>
+              </div>
+              <p className="text-[#172754] text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
                 Using SEO techniques to drive organic traffic and get your
                 content in front of the right people
               </p>
@@ -74,11 +86,18 @@ export default function Home() {
 
           {/* Card 4 */}
           <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu ">
-            <div className="space-y-2 text-center">
-              <h5 className="text-l font-semibold text-[#172754] transition-colors group-hover:font-bold ">
-                Performance
-              </h5>
-              <p className="text-[#172754] text-sm font-light transition-colors group-hover:text-gray-800">
+            <div className="flex flex-col items-center">
+              <div className="flex items-center space-x-2">
+                <img
+                  src="/chart2.svg"
+                  alt="Performance Icon"
+                  className="w-6 h-6"
+                />{" "}
+                <h5 className="text-l font-semibold text-[#172754] transition-colors group-hover:font-bold ">
+                  Performance
+                </h5>
+              </div>
+              <p className="text-[#172754] text-sm font-light transition-colors group-hover:text-gray-800 mt-2 text-center">
                 Tracking analytics to continually optimise content and drive
                 success
               </p>
