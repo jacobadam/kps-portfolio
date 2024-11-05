@@ -9,35 +9,35 @@ const NavBar = () => {
 
   return (
     <div>
-      <header className="bg-[#172754]">
+      <header className="bg-portfolio">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-          <div className="text-white">Katie Shevlin</div>
+          <div className="text-stone-100">Katie Shevlin</div>
 
           <div className="flex flex-1 items-center justify-center">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <Link href="/" className="text-white">
+                  <Link href="/" className="text-stone-100">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="text-white">
+                  <Link href="/about" className="text-stone-100">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="text-white">
+                  <Link href="/services" className="text-stone-100">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/portfolio" className="text-white">
+                  <Link href="/portfolio" className="text-stone-100">
                     Portfolio
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="text-white">
+                  <Link href="/contact" className="text-stone-100">
                     Contact
                   </Link>
                 </li>
@@ -61,7 +61,7 @@ const NavBar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+              className="block rounded bg-stone-100 p-2.5 text-portfolio transition hover:text-portfolio md:hidden"
             >
               <span className="sr-only">Toggle menu</span>
               <svg
@@ -87,19 +87,23 @@ const NavBar = () => {
           <div className="md:hidden bg-[#172754] shadow-lg">
             <ul className="flex flex-col items-center gap-6 text-sm p-4">
               <li>
-                <Link href="/" className="text-white" onClick={toggleMenu}>
+                <Link href="/" className="text-stone-100" onClick={toggleMenu}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-white" onClick={toggleMenu}>
+                <Link
+                  href="/about"
+                  className="text-stone-100"
+                  onClick={toggleMenu}
+                >
                   About
                 </Link>
               </li>
               <li>
                 <Link
                   href="/services"
-                  className="text-white"
+                  className="text-stone-100"
                   onClick={toggleMenu}
                 >
                   Services
@@ -108,7 +112,7 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/portfolio"
-                  className="text-white"
+                  className="text-stone-100"
                   onClick={toggleMenu}
                 >
                   Portfolio
@@ -117,7 +121,7 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="text-white"
+                  className="text-stone-100"
                   onClick={toggleMenu}
                 >
                   Contact

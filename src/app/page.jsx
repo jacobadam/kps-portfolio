@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section className="relative flex flex-col h-full bg-stone-100">
+    <section className="relative flex flex-col h-full">
       {/* Hero Image Section */}
       <div
         className="h-[25vh] bg-cover bg-center"
@@ -10,7 +10,7 @@ export default function Home() {
       ></div>
 
       {/* Profile Image Overlay */}
-      <div className="absolute w-48 h-48 rounded-full border border-[#E8E3F4] top-[15vh] left-1/2 transform -translate-x-1/2 overflow-hidden">
+      <div className="absolute w-48 h-48 rounded-full border border-stone-100 top-[15vh] left-1/2 transform -translate-x-1/2 overflow-hidden">
         <img
           className="w-full h-full object-cover"
           src="/profile-image.webp"
@@ -106,10 +106,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-stone-100 flex flex-col flex-grow items-center justify-center mt-8 mb-8">
+      <div className="flex flex-col flex-grow items-center justify-center mt-8 mb-8">
         <a
           href="/contact"
-          className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-[#172754] border border-[#172754] rounded-lg focus:outline-none"
+          className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-stone-100 bg-portfolio border rounded-lg focus:outline-none"
         >
           Get in touch
         </a>

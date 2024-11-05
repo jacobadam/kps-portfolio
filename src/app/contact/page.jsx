@@ -2,7 +2,7 @@ import React from "react";
 
 export const Contact = () => {
   return (
-    <section id="contact-form" className="bg-white flex-grow">
+    <section id="contact-form" className="flex-grow">
       <div className="py-12 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2
           className="mb-4 text-4xl tracking-tight font-extrabold text-center"
@@ -22,7 +22,7 @@ export const Contact = () => {
             <input
               type="email"
               id="email"
-              className="shadow-sm bg-white border text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+              className="shadow-sm bg-stone-100 border text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
               style={{ borderColor: "#172754", color: "#172754" }}
               required
             />
@@ -38,7 +38,7 @@ export const Contact = () => {
             <input
               type="text"
               id="subject"
-              className="block p-3 w-full text-sm bg-white rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500"
+              className="block p-3 w-full text-sm bg-stone-100 rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500"
               style={{ borderColor: "#172754", color: "#172754" }}
               required
             />
@@ -54,14 +54,13 @@ export const Contact = () => {
             <textarea
               id="message"
               rows="6"
-              className="block p-2.5 w-full text-sm bg-white rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500"
+              className="block p-2.5 w-full text-sm bg-stone-100 rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500"
               style={{ borderColor: "#172754", color: "#172754" }}
             ></textarea>
           </div>
           <button
             type="submit"
-            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none"
-            style={{ backgroundColor: "#172754", color: "white" }}
+            className="py-3 px-5 text-sm font-medium text-center text-stone-100 bg-portfolio rounded-lg sm:w-fit focus:ring-4 focus:outline-none"
           >
             Send message
           </button>
