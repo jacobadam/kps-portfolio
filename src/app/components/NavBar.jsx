@@ -52,7 +52,7 @@ const NavBar = () => {
               rel="noopener noreferrer"
             >
               <img
-                src="/linkedin-logo.webp" // Make sure the path is correct
+                src="/linkedin-logo.svg"
                 alt="LinkedIn"
                 className="h-6 w-6"
               />

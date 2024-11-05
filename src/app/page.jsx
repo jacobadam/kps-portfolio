@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section className="relative flex flex-col h-full">
+    <section className="relative flex flex-col h-full bg-stone-100">
       {/* Hero Image Section */}
       <div
         className="h-[25vh] bg-cover bg-center"
@@ -19,9 +19,9 @@ export default function Home() {
       </div>
 
       {/* Content Section */}
-      <div className="bg-white flex flex-col items-center justify-center mt-28">
+      <div className="flex flex-col items-center justify-center mt-28">
         <div className="items-center px-8 mx-auto max-w-7xl lg:px-16 md:px-12 text-center pb-5 pt-5">
-          <p className="mt-2.5 pb-5 text-[#1f2128] text-2xl font-normal tracking-tighter">
+          <p className="text-[#1f2128] text-2xl font-normal tracking-tighter">
             I'm <span className="font-semibold">Katie</span>, a writer and
             editor with a decade of experience{" "}
             <span className="block">producing high-quality content</span>
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white flex flex-col flex-grow items-center justify-center mt-8 mb-8 sm:mt-4 sm:mb-4">
+      <div className="bg-stone-100 flex flex-col flex-grow items-center justify-center mt-8 mb-8">
         <button className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-[#172754] border border-[#172754] rounded-lg focus:outline-none">
           Get in touch
         </button>
