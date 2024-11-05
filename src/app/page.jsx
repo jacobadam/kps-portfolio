@@ -107,9 +107,12 @@ export default function Home() {
       </div>
 
       <div className="bg-stone-100 flex flex-col flex-grow items-center justify-center mt-8 mb-8">
-        <button className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-[#172754] border border-[#172754] rounded-lg focus:outline-none">
+        <a
+          href="/contact"
+          className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-[#172754] border border-[#172754] rounded-lg focus:outline-none"
+        >
           Get in touch
-        </button>
+        </a>
       </div>
     </section>
   );
