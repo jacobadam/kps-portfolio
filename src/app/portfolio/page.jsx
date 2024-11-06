@@ -8,11 +8,6 @@ export default function Portfolio() {
               <h1 className="text-2xl font-bold text-portfolio sm:text-3xl text-center">
                 Portfolio
               </h1>
-
-              <p className="mt-1.5 text-sm text-gray-500">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
-                recusandae.
-              </p>
             </div>
           </div>
         </div>
@@ -21,12 +16,14 @@ export default function Portfolio() {
       <div className="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6">
         <div className="grid gap-8 lg:grid-cols-4">
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <header className="p-4 bg-gray-200 text-center">
+              <h2 className="text-xl font-bold text-portfolio">Technology</h2>
+            </header>
             <img
               alt=""
               src="/perfect-pizza.webp"
               className="h-56 w-full object-cover"
             />
-
             <div className="p-4 sm:p-6">
               <a
                 href="https://www.toptal.com/product-managers/ecommerce/customer-research-tool"
@@ -38,14 +35,12 @@ export default function Portfolio() {
                   Measure Taste
                 </h3>
               </a>
-
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                 Customer research in the food sector is expensive and
                 time-consuming. Here’s how one global pizza company used its own
                 food-ordering app to get new levels of insight into its
                 products—for free.
               </p>
-
               <a
                 href="https://www.toptal.com/product-managers/ecommerce/customer-research-tool"
                 target="_blank"
@@ -64,6 +59,9 @@ export default function Portfolio() {
           </article>
 
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <header className="p-4 bg-gray-200 text-center">
+              <h2 className="text-xl font-bold text-portfolio">Lifestyle</h2>
+            </header>
             <img
               alt=""
               src="/vancouver-coffee.webp"
@@ -83,7 +81,11 @@ export default function Portfolio() {
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Whether it’s an essential part of your morning routine, a
+                hump-day treat, or you simply need a break from your desk, we
+                all love a coffee shop. Vancouver has an abundance of choice in
+                this area–the city is home to a variety of big names, but
+                there’s an awesome selection of small, independent spots too.
               </p>
 
               <a
@@ -104,6 +106,90 @@ export default function Portfolio() {
           </article>
 
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <header className="p-4 bg-gray-200 text-center">
+              <h2 className="text-xl font-bold text-portfolio">Finance</h2>
+            </header>
+            <img
+              alt=""
+              src="/vernon-hill.webp"
+              className="h-56 w-full object-cover"
+            />
+
+            <div className="p-4 sm:p-6">
+              <a
+                href="/metrobank-interview.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 className="text-lg font-medium text-portfolio">
+                  A Capital Idea
+                </h3>
+              </a>
+
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Metro Bank is set to become the next big name in franchise
+                business lending. Katie Shevlin meets founder and chairman
+                Vernon Hill II
+              </p>
+
+              <a
+                href="/metrobank-interview.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+              >
+                Read more
+                <span
+                  aria-hidden="true"
+                  className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                >
+                  &rarr;
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <header className="p-4 bg-gray-200 text-center">
+              <h2 className="text-xl font-bold text-portfolio">Healthcare</h2>
+            </header>
+            <img alt="" src="/ai.webp" className="h-56 w-full object-cover" />
+
+            <div className="p-4 sm:p-6">
+              <a href="/hp.pdf" target="_blank" rel="noopener noreferrer">
+                <h3 className="text-lg font-medium text-portfolio">
+                  AI and the NHS Long Term Plan
+                </h3>
+              </a>
+
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                The role that AI could play in the UK health sector in the next
+                decade.
+              </p>
+
+              <a
+                href="/hp.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+              >
+                Read more
+                <span
+                  aria-hidden="true"
+                  className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                >
+                  &rarr;
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <header className="p-4 bg-gray-200 text-center">
+              <h2 className="text-xl font-bold text-portfolio">
+                Current Affairs
+              </h2>
+            </header>
             <img
               alt=""
               src="/brexit.webp"
@@ -122,7 +208,10 @@ export default function Portfolio() {
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                "Should I stay or should I go?" asked The Clash in 1982. And, on
+                June 23, UK citizens will be asking themselves just that as they
+                walk into voting booths across Britain and make the
+                all-important decision on the UK's EU membership.
               </p>
 
               <a
@@ -143,6 +232,9 @@ export default function Portfolio() {
           </article>
 
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <header className="p-4 bg-gray-200 text-center">
+              <h2 className="text-xl font-bold text-portfolio">Business</h2>
+            </header>
             <img
               alt=""
               src="/coaching.webp"
@@ -184,12 +276,16 @@ export default function Portfolio() {
           </article>
 
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <header className="p-4 bg-gray-200 text-center">
+              <h2 className="text-xl font-bold text-portfolio">
+                Diversity and Inclusion
+              </h2>
+            </header>
             <img
               alt=""
               src="/gender-imbalance.webp"
               className="h-56 w-full object-cover"
             />
-
             <div className="p-4 sm:p-6">
               <a
                 href="https://www.digitalhealth.net/2020/05/addressing-gender-imbalance-will-take-time-but-change-needs-to-start-now/"
@@ -203,7 +299,9 @@ export default function Portfolio() {
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Gender imbalance in digital health has long been debated and
+                Katie Shevlin from Inhealth Communications looks into why
+                addressing the issue will take time but has to be driven now.
               </p>
 
               <a
@@ -224,12 +322,14 @@ export default function Portfolio() {
           </article>
 
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <header className="p-4 bg-gray-200 text-center">
+              <h2 className="text-xl font-bold text-portfolio">Trends</h2>
+            </header>
             <img
               alt=""
               src="/ar-marketing.webp"
               className="h-56 w-full object-cover"
             />
-
             <div className="p-4 sm:p-6">
               <a
                 href="https://www.toptal.com/marketing/digital/augmented-reality-marketing"
@@ -250,91 +350,6 @@ export default function Portfolio() {
 
               <a
                 href="https://www.toptal.com/marketing/digital/augmented-reality-marketing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-portfolio"
-              >
-                Read more
-                <span
-                  aria-hidden="true"
-                  className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
-                >
-                  &rarr;
-                </span>
-              </a>
-            </div>
-          </article>
-
-          <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <img
-              alt=""
-              src="/perfect-pizza.webp"
-              className="h-56 w-full object-cover"
-            />
-
-            <div className="p-4 sm:p-6">
-              <a
-                href="https://www.toptal.com/product-managers/ecommerce/customer-research-tool"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h3 className="text-lg font-medium text-portfolio">
-                  Perfect Pizza: Using a Digital Customer Research Tool to
-                  Measure Taste
-                </h3>
-              </a>
-
-              <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Customer research in the food sector is expensive and
-                time-consuming. Here’s how one global pizza company used its own
-                food-ordering app to get new levels of insight into its
-                products—for free.
-              </p>
-
-              <a
-                href="https://www.toptal.com/product-managers/ecommerce/customer-research-tool"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-portfolio"
-              >
-                Read more
-                <span
-                  aria-hidden="true"
-                  className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
-                >
-                  &rarr;
-                </span>
-              </a>
-            </div>
-          </article>
-          <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <img
-              alt=""
-              src="/perfect-pizza.webp"
-              className="h-56 w-full object-cover"
-            />
-
-            <div className="p-4 sm:p-6">
-              <a
-                href="https://www.toptal.com/product-managers/ecommerce/customer-research-tool"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h3 className="text-lg font-medium text-portfolio">
-                  Perfect Pizza: Using a Digital Customer Research Tool to
-                  Measure Taste
-                </h3>
-              </a>
-
-              <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Customer research in the food sector is expensive and
-                time-consuming. Here’s how one global pizza company used its own
-                food-ordering app to get new levels of insight into its
-                products—for free.
-              </p>
-
-              <a
-                href="https://www.toptal.com/product-managers/ecommerce/customer-research-tool"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-portfolio"
