@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div id="about" className="relative overflow-hidden mt-16">
+    <div id="about" className="relative overflow-hidden lg:mt-16">
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 bg-stone-100 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
