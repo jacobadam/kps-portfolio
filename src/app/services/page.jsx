@@ -2,24 +2,25 @@ export default function Services() {
   return (
     <section>
       <header className="border-b border-gray-200 bg-slate-200">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <div className="flex flex-col items-start justify-center gap-4 md:flex-row md:items-center">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="flex flex-row items-center justify-center gap-4">
             <div>
               <h1 className="text-2xl font-bold text-portfolio sm:text-3xl text-center">
                 Services
               </h1>
-              <p className="mt-1.5 text-sm text-gray-500 text-center">
-                When it comes to achieving your business goals, every piece of
-                content counts. I bring years of experience and a strategic
-                approach to crafting high-quality, engaging content tailored to
-                your specific needs. From writing and editing to SEO and content
-                strategy, my services are designed to help you connect with your
-                audience, elevate your brand, and drive lasting impact.
-              </p>
             </div>
           </div>
         </div>
       </header>
+
+      <p className="mt-1.5 text-sm text-gray-500 max-w-l text-center">
+        When it comes to achieving your business goals, every piece of content
+        counts. I bring years of experience and a strategic approach to crafting
+        high-quality, engaging content tailored to your specific needs. From
+        writing and editing to SEO and content strategy, my services are
+        designed to help you connect with your audience, elevate your brand, and
+        drive lasting impact.
+      </p>
 
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">

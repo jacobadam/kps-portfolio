@@ -4,22 +4,21 @@ export const Contact = () => {
   return (
     <section id="contact-form" className="flex-grow">
       <header className="border-b border-gray-200 bg-slate-200">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <div className="flex flex-col items-start justify-center gap-4 md:flex-row md:items-center">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="flex flex-row items-center justify-center gap-4">
             <div>
               <h1 className="text-2xl font-bold text-portfolio sm:text-3xl text-center">
                 Contact
               </h1>
-
-              <p className="mt-1.5 text-sm text-gray-500">
-                If you’re ready to invest in high-quality content, get in touch!
-                I’d love to discuss how I can contribute to the success of your
-                business.
-              </p>
             </div>
           </div>
         </div>
       </header>
+
+      <h5 className="mt-1.5 text-gray-500 text-center ">
+        If you’re ready to invest in high-quality content, get in touch! I’d
+        love to discuss how I can contribute to the success of your business.
+      </h5>
       <div className="py-12 lg:py-8 px-4 mx-auto max-w-screen-md">
         <form action="#" className="space-y-8">
           <div>
