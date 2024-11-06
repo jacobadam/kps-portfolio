@@ -14,7 +14,8 @@ export default function Portfolio() {
       </header>
 
       <div className="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6">
-        <div className="grid gap-8 lg:grid-cols-4">
+        <div className="grid gap-8 grid-cols-2 lg:grid-cols-4">
+          {/* Article 1 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-xl font-bold text-portfolio">Technology</h2>
@@ -58,6 +59,7 @@ export default function Portfolio() {
             </div>
           </article>
 
+          {/* Article 2 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-xl font-bold text-portfolio">Lifestyle</h2>
@@ -105,6 +107,7 @@ export default function Portfolio() {
             </div>
           </article>
 
+          {/* Article 3 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-xl font-bold text-portfolio">Finance</h2>
@@ -149,6 +152,7 @@ export default function Portfolio() {
             </div>
           </article>
 
+          {/* Article 4 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-xl font-bold text-portfolio">Healthcare</h2>
@@ -184,6 +188,7 @@ export default function Portfolio() {
             </div>
           </article>
 
+          {/* Article 5 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-xl font-bold text-portfolio">
@@ -231,6 +236,7 @@ export default function Portfolio() {
             </div>
           </article>
 
+          {/* Article 6 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-xl font-bold text-portfolio">Business</h2>
@@ -275,6 +281,7 @@ export default function Portfolio() {
             </div>
           </article>
 
+          {/* Article 7 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-xl font-bold text-portfolio">
@@ -321,6 +328,7 @@ export default function Portfolio() {
             </div>
           </article>
 
+          {/* Article 8 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-xl font-bold text-portfolio">Trends</h2>
