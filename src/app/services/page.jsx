@@ -9,8 +9,12 @@ export default function Services() {
                 Services
               </h1>
               <p className="mt-1.5 text-sm text-gray-500 text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
-                recusandae.
+                When it comes to achieving your business goals, every piece of
+                content counts. I bring years of experience and a strategic
+                approach to crafting high-quality, engaging content tailored to
+                your specific needs. From writing and editing to SEO and content
+                strategy, my services are designed to help you connect with your
+                audience, elevate your brand, and drive lasting impact.
               </p>
             </div>
           </div>

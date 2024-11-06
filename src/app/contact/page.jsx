@@ -12,8 +12,9 @@ export const Contact = () => {
               </h1>
 
               <p className="mt-1.5 text-sm text-gray-500">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
-                recusandae.
+                If you’re ready to invest in high-quality content, get in touch!
+                I’d love to discuss how I can contribute to the success of your
+                business.
               </p>
             </div>
           </div>
