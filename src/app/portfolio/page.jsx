@@ -2,8 +2,8 @@ export default function Portfolio() {
   return (
     <section className="flex-grow">
       <header className="border-b border-gray-200 bg-slate-200">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <div className="flex flex-col items-start justify-center gap-4 md:flex-row md:items-center">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6  lg:px-8">
+          <div className="flex flex-row items-center justify-center gap-4">
             <div>
               <h1 className="text-2xl font-bold text-portfolio sm:text-3xl text-center">
                 Portfolio
@@ -14,11 +14,11 @@ export default function Portfolio() {
       </header>
 
       <div className="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6">
-        <div className="grid gap-8 grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 grid-cols-1 xs:grid-cols-2 lg:grid-cols-4">
           {/* Article 1 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-xl font-bold text-portfolio">Technology</h2>
+              <h2 className="text-l font-bold text-portfolio">Technology</h2>
             </header>
             <img
               alt=""
@@ -62,7 +62,7 @@ export default function Portfolio() {
           {/* Article 2 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-xl font-bold text-portfolio">Lifestyle</h2>
+              <h2 className="text-l font-bold text-portfolio">Lifestyle</h2>
             </header>
             <img
               alt=""
@@ -77,7 +77,7 @@ export default function Portfolio() {
                 rel="noopener noreferrer"
               >
                 <h3 className="text-lg font-medium text-portfolio">
-                  7 Must Visit Coffee Shops in Wankouver, Canada
+                  7 Must Visit Coffee Shops in Vancouver, Canada
                 </h3>
               </a>
 
@@ -109,7 +109,7 @@ export default function Portfolio() {
           {/* Article 3 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-xl font-bold text-portfolio">Finance</h2>
+              <h2 className="text-l font-bold text-portfolio">Finance</h2>
             </header>
             <img
               alt=""
@@ -154,7 +154,7 @@ export default function Portfolio() {
           {/* Article 4 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-xl font-bold text-portfolio">Healthcare</h2>
+              <h2 className="text-l font-bold text-portfolio">Healthcare</h2>
             </header>
             <img alt="" src="/ai.webp" className="h-56 w-full object-cover" />
 
@@ -194,7 +194,7 @@ export default function Portfolio() {
           {/* Article 5 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-xl font-bold text-portfolio">
+              <h2 className="text-l font-bold text-portfolio">
                 Current Affairs
               </h2>
             </header>
@@ -242,7 +242,7 @@ export default function Portfolio() {
           {/* Article 6 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-xl font-bold text-portfolio">Business</h2>
+              <h2 className="text-l font-bold text-portfolio">Business</h2>
             </header>
             <img
               alt=""
@@ -287,7 +287,7 @@ export default function Portfolio() {
           {/* Article 7 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-xl font-bold text-portfolio">
+              <h2 className="text-l font-bold text-portfolio">
                 Diversity and Inclusion
               </h2>
             </header>
@@ -334,7 +334,7 @@ export default function Portfolio() {
           {/* Article 8 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-xl font-bold text-portfolio">Trends</h2>
+              <h2 className="text-l font-bold text-portfolio">Trends</h2>
             </header>
             <img
               alt=""
