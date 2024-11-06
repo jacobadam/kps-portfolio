@@ -21,61 +21,72 @@ export default function Services() {
         </div>
       </header>
 
-      <div className="py-4 px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-10">
-            <div className="service">
-              <h2 className="text-2xl font-semibold text-portfolio mb-3 text-center">
-                Writing
-              </h2>
-              <p className="text-portfolio leading-relaxed text-center">
-                I specialise in creating thought leadership content that engages
-                your audience and boosts your credibility. My experience spans a
-                range of formats, from blogs and interviews to features and
-                long-form reports. I write across business, lifestyle,
-                technology, healthcare, current affairs, and more.
-              </p>
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+              <img
+                alt=""
+                src="typing.webp"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
             </div>
 
-            <div className="service">
-              <h2 className="text-2xl font-semibold text-portfolio mb-3 text-center">
-                Editing & Proofreading
-              </h2>
-              <p className="text-portfolio leading-relaxed text-center">
-                I provide meticulous editing and proofreading services to
-                elevate the clarity and impact of your content. From refining
-                structure and flow to polishing grammar and style, I ensure all
-                copy reflects your unique brand voice, as well as being
-                consistent, accurate, and error-free.
-              </p>
-            </div>
+            <div>
+              <div className="services pb-4">
+                <h2 className="text-2xl font-semibold text-portfolio mb-3 text-center">
+                  Writing
+                </h2>
+                <p className="text-portfolio leading-relaxed text-center">
+                  I specialise in creating thought leadership content that
+                  engages your audience and boosts your credibility. My
+                  experience spans a range of formats, from blogs and interviews
+                  to features and long-form reports. I write across business,
+                  lifestyle, technology, healthcare, current affairs, and more.
+                </p>
+              </div>
 
-            <div className="service">
-              <h2 className="text-2xl font-semibold text-portfolio mb-3 text-center">
-                SEO
-              </h2>
-              <p className="text-portfolio leading-relaxed text-center">
-                In an increasingly competitive digital landscape, it’s vital to
-                optimise your content to reach the right audience. By conducting
-                rigorous keyword research and implementing SEO best practices, I
-                can increase your organic traffic without sacrificing quality or
-                readability.
-              </p>
-            </div>
+              <div className="services pb-4">
+                <h2 className="text-2xl font-semibold text-portfolio mb-3 text-center">
+                  Editing & Proofreading
+                </h2>
+                <p className="text-portfolio leading-relaxed text-center">
+                  I provide meticulous editing and proofreading services to
+                  elevate the clarity and impact of your content. From refining
+                  structure and flow to polishing grammar and style, I ensure
+                  all copy reflects your unique brand voice, as well as being
+                  consistent, accurate, and error-free.
+                </p>
+              </div>
 
-            <div className="service">
-              <h2 className="text-2xl font-semibold text-portfolio mb-3 text-center">
-                Content Strategy
-              </h2>
-              <p className="text-portfolio leading-relaxed text-center">
-                With an emphasis on creating a cohesive brand narrative across
-                channels, I develop strategic plans and guide content production
-                to drive engagement, build brand loyalty, and maximize impact.
-              </p>
+              <div className="services pb-4">
+                <h2 className="text-2xl font-semibold text-portfolio mb-3 text-center">
+                  SEO
+                </h2>
+                <p className="text-portfolio leading-relaxed text-center">
+                  In an increasingly competitive digital landscape, it’s vital
+                  to optimise your content to reach the right audience. By
+                  conducting rigorous keyword research and implementing SEO best
+                  practices, I can increase your organic traffic without
+                  sacrificing quality or readability.
+                </p>
+              </div>
+
+              <div className="services pb-4">
+                <h2 className="text-2xl font-semibold text-portfolio mb-3 text-center">
+                  Content Strategy
+                </h2>
+                <p className="text-portfolio leading-relaxed text-center">
+                  With an emphasis on creating a cohesive brand narrative across
+                  channels, I develop strategic plans and guide content
+                  production to drive engagement, build brand loyalty, and
+                  maximize impact.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
   );
 }
