@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out -b gh-pages",
     "generate-sitemap": "next-sitemap"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "react-dom": "19.0.0-rc-02c0e824-20241028"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
