@@ -1,4 +1,4 @@
-export default function Services() {
+const Services = () => {
   return (
     <section>
       <header className="border-b border-gray-200">
@@ -92,4 +92,6 @@ export default function Services() {
       </section>
     </section>
   );
-}
+};
+
+export default Services;

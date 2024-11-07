@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   siteUrl: "https://www.katieshevlin.com",
   generateRobotsTxt: true,
   changefreq: "monthly",

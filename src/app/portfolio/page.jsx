@@ -1,4 +1,4 @@
-export default function Portfolio() {
+const Portfolio = () => {
   return (
     <section className="flex-grow">
       <header className="border-b border-gray-200">
@@ -379,4 +379,6 @@ export default function Portfolio() {
       </div>
     </section>
   );
-}
+};
+
+export default Portfolio;

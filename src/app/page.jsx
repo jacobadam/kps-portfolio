@@ -36,7 +36,7 @@ export default function Home() {
         {/* Card grid */}
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {/* Card 1 */}
-          <Link href="/services" passHref>
+          <Link href="/services">
             <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu block h-full">
               <div className="flex flex-col items-center h-full">
                 <div className="flex items-center space-x-2">
@@ -58,7 +58,7 @@ export default function Home() {
           </Link>
 
           {/* Card 2 */}
-          <Link href="/services" passHref>
+          <Link href="/services">
             <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu block h-full">
               <div className="flex flex-col items-center h-full">
                 <div className="flex items-center space-x-2">
@@ -76,7 +76,7 @@ export default function Home() {
           </Link>
 
           {/* Card 3 */}
-          <Link href="/services" passHref>
+          <Link href="/services">
             <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu block h-full">
               <div className="flex flex-col items-center h-full">
                 <div className="flex items-center space-x-2">
@@ -94,7 +94,7 @@ export default function Home() {
           </Link>
 
           {/* Card 4 */}
-          <Link href="/services" passHref>
+          <Link href="/services">
             <div className="group relative bg-white border border-[#8F9992] transition-transform hover:scale-105 hover:shadow-xl hover:shadow-gray-600/20 p-8 rounded-lg transform-gpu block h-full">
               <div className="flex flex-col items-center h-full">
                 <div className="flex items-center space-x-2">
