@@ -2,6 +2,5 @@ export default {
   trailingSlash: true,
   reactStrictMode: true,
   output: "export",
-  basePath: "/",
-  assetPrefix: "/",
+  assetPrefix: "/kps-portfolio",
 };
