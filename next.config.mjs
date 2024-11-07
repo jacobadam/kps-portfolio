@@ -1,6 +1,0 @@
-export default {
-  trailingSlash: true,
-  reactStrictMode: true,
-  basePath: process.env.NODE_ENV === "production" ? "/kps-portfolio" : "",
-  output: "export",
-};
