@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.katieshevlin.com
+
+# Sitemaps
+Sitemap: https://www.katieshevlin.com/sitemap.xml
