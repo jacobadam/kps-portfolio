@@ -3,7 +3,7 @@ import React from "react";
 export const Contact = () => {
   return (
     <section id="contact-form" className="flex-grow">
-      <header className="border-b border-gray-200 bg-slate-200">
+      <header className="border-b border-gray-200">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="flex flex-row items-center justify-center gap-4">
             <div>
@@ -15,10 +15,13 @@ export const Contact = () => {
         </div>
       </header>
 
-      <h5 className="mt-1.5 text-gray-500 text-center ">
-        If you’re ready to invest in high-quality content, get in touch! I’d
-        love to discuss how I can contribute to the success of your business.
-      </h5>
+      <div className="bg-stone-100 text-center p-4 mx-auto max-w-screen-md mt-4 rounded-lg">
+        <p className="text-md text-portfolio">
+          If you’re ready to invest in high-quality content, get in touch! I’d
+          love to discuss how I can contribute to the success of your business.
+        </p>
+      </div>
+
       <div className="py-12 lg:py-8 px-4 mx-auto max-w-screen-md">
         <form action="#" className="space-y-8">
           <div>
@@ -38,7 +41,7 @@ export const Contact = () => {
           <div>
             <label
               htmlFor="subject"
-              className="block mb-2 text-sm font-medium text=portfolio"
+              className="block mb-2 text-sm font-medium text-portfolio"
             >
               Subject
             </label>
