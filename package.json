@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "gh-pages -d out -b gh-pages",
+    "deploy": "cp CNAME out/CNAME && gh-pages -d out",
     "generate-sitemap": "next-sitemap"
   },
   "dependencies": {
