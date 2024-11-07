@@ -50,6 +50,14 @@ export default function Contact() {
         </p>
       </div>
 
+      {messageSent && (
+        <p
+          className="text-center text-portfolio text-xl font-bold"
+          aria-live="polite"
+        >
+          Message sent!
+        </p>
+      )}
       <div className="py-12 lg:py-8 px-4 mx-auto max-w-screen-md">
         <form action="#" ref={form} onSubmit={sendEmail} className="space-y-8">
           <div>
