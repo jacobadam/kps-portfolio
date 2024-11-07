@@ -1,6 +1,36 @@
-import React from "react";
+"use client";
 
-const Contact = () => {
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
+export default function Contact() {
+  const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "contact_service",
+        "contact_form",
+        form.current,
+        "lhdMxDBMufUETZkc3"
+      )
+      .then(
+        () => {
+          console.log("Success!");
+          setMessageSent(true);
+          setTimeout(() => setMessageSent(false), 5000);
+        },
+        (error) => {
+          console.log("Failed...", error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <section id="contact-form" className="flex-grow">
       <header className="border-b border-gray-200">
@@ -21,17 +51,17 @@ const Contact = () => {
       </div>
 
       <div className="py-12 lg:py-8 px-4 mx-auto max-w-screen-md">
-        <form action="#" className="space-y-8">
+        <form action="#" ref={form} onSubmit={sendEmail} className="space-y-8">
           <div>
             <label
               htmlFor="email"
               className="block mb-2 text-sm font-medium text-portfolio"
             >
-              Your email
+              Name
             </label>
             <input
-              type="email"
-              id="email"
+              type="text"
+              id="name"
               className="shadow-sm bg-stone-100 border text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 text-portfolio border-portfolio"
               required
             />
@@ -41,11 +71,11 @@ const Contact = () => {
               htmlFor="subject"
               className="block mb-2 text-sm font-medium text-portfolio"
             >
-              Subject
+              Email
             </label>
             <input
-              type="text"
-              id="subject"
+              type="email"
+              id="email"
               className="block p-3 w-full text-sm bg-stone-100 rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 text-portfolio border-portfolio"
               required
             />
@@ -55,7 +85,7 @@ const Contact = () => {
               htmlFor="message"
               className="block mb-2 text-sm font-medium text-portfolio"
             >
-              Your message
+              Message
             </label>
             <textarea
               id="message"
@@ -73,6 +103,4 @@ const Contact = () => {
       </div>
     </section>
   );
-};
-
-export default Contact;
+}
