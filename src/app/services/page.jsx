@@ -30,7 +30,7 @@ export default function Services() {
             <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
               <img
                 alt=""
-                src="typing.webp"
+                src="/typing.webp"
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
