@@ -15,7 +15,7 @@ export default function About() {
 
           <div className="pt-1"></div>
 
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 lg:mt-20 lg:px-8 xl:mt-12">
+          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 lg:mt-20 lg:pl-8 lg:pr-10 xl:mt-12">
             <div className="sm:text-center lg:text-left">
               <h2 className="my-6 text-2xl tracking-tight font-bold text-portfolio md:text-4xl">
                 About me
