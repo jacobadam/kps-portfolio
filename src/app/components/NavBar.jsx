@@ -11,7 +11,7 @@ const NavBar = () => {
     <div>
       <header className="bg-portfolio">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a href="/">
             <img src="/ks-logo.svg" alt="logo" className="h-12 w-12" />
           </a>
 
