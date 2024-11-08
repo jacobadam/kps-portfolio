@@ -34,7 +34,7 @@ export default function Contact() {
   return (
     <section id="contact-form" className="flex-grow">
       <header className="border-b border-gray-200">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex flex-row items-center justify-center gap-4">
             <h1 className="text-2xl font-bold text-portfolio sm:text-3xl text-center">
               Contact
