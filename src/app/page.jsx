@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       {/* Content Section */}
-      <div className="flex flex-col items-center justify-center mt-28">
+      <div className="flex flex-col items-center justify-center mt-36 xxs:mt-28 lg:mt-28 short-lg:mt-32">
         <div className="items-center px-8 mx-auto max-w-7xl lg:px-16 md:px-12 text-center pb-5 pt-5">
           <p className="text-[#1f2128] text-2xl font-normal tracking-tighter">
             I'm <span className="font-semibold">Katie</span>, a writer and
