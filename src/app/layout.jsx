@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "Katie Shelin Portfolio",
+  title: "Katie Shevlin Portfolio",
   description:
     "Professional writing, editing, SEO, and strategy services to elevate your brand. Get expert support to ensure your content has impact and meets your marketing goals.",
 };
