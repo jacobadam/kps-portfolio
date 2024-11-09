@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div id="about" className="relative overflow-hidden lg:mt-16">
       <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-stone-100 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <div className="relative z-10 pb-8 bg-stone-100 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 lg:pr-16 xl:pb-32">
           <svg
             className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-stone-100 transform translate-x-1/2"
             fill="currentColor"
