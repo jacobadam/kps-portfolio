@@ -11,7 +11,7 @@ const NavBar = () => {
     <div>
       <header className="bg-portfolio">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-          <a href="/">
+          <a href="/" className="md:hidden">
             <img src="/ks-logo.svg" alt="logo" className="h-12 w-12" />
           </a>
 
@@ -63,7 +63,7 @@ const NavBar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="block rounded bg-stone-100 p-2.5 text-portfolio transition hover:text-portfolio md:hidden"
+              className="block rounded bg-portfolio p-2.5 text-stone-100 transition md:hidden"
             >
               <span className="sr-only">Toggle menu</span>
               <svg
