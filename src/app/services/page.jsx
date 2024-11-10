@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Services = () => {
   return (
     <section>
@@ -28,10 +30,13 @@ const Services = () => {
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-              <img
-                alt=""
+              <Image
+                alt="Typing image"
                 src="/typing.webp"
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0"
+                fill="true"
+                style={{ objectFit: "cover" }}
+                loading="lazy"
               />
             </div>
 
