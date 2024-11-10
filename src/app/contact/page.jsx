@@ -22,21 +22,29 @@ export default function Contact() {
           console.log("Success!");
           setMessageSent(true);
           setTimeout(() => setMessageSent(false), 5000);
+          e.target.reset();
+          document.getElementById("contact-form").focus();
         },
         (error) => {
           console.log("Failed...", error.text);
         }
       );
-
-    e.target.reset();
   };
 
   return (
-    <section id="contact-form" className="flex-grow">
+    <section
+      id="contact-form"
+      className="flex-grow"
+      aria-labelledby="contact-title"
+      tabIndex="-1"
+    >
       <header className="border-b border-gray-200">
         <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex flex-row items-center justify-center gap-4">
-            <h1 className="text-2xl font-bold text-portfolio sm:text-3xl text-center">
+            <h1
+              id="contact-title"
+              className="text-2xl font-bold text-portfolio sm:text-3xl text-center"
+            >
               Contact
             </h1>
           </div>
@@ -53,16 +61,23 @@ export default function Contact() {
       {messageSent && (
         <p
           className="text-center text-portfolio text-xl font-bold"
+          role="status"
           aria-live="polite"
         >
           Message sent!
         </p>
       )}
       <div className="py-12 lg:py-8 px-4 mx-auto max-w-screen-md">
-        <form action="#" ref={form} onSubmit={sendEmail} className="space-y-8">
+        <form
+          action="#"
+          ref={form}
+          onSubmit={sendEmail}
+          className="space-y-8"
+          aria-describedby="contact-instructions"
+        >
           <div>
             <label
-              htmlFor="email"
+              htmlFor="name"
               className="block mb-2 text-sm font-medium text-portfolio"
             >
               Name
@@ -70,13 +85,15 @@ export default function Contact() {
             <input
               type="text"
               id="name"
+              name="user_name"
               className="shadow-sm bg-stone-100 border text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 text-portfolio border-portfolio"
               required
+              aria-required="true"
             />
           </div>
           <div>
             <label
-              htmlFor="subject"
+              htmlFor="email"
               className="block mb-2 text-sm font-medium text-portfolio"
             >
               Email
@@ -84,8 +101,10 @@ export default function Contact() {
             <input
               type="email"
               id="email"
+              name="user_email"
               className="block p-3 w-full text-sm bg-stone-100 rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 text-portfolio border-portfolio"
               required
+              aria-required="true"
             />
           </div>
           <div className="sm:col-span-2">
@@ -97,8 +116,11 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
+              name="message"
               rows="6"
               className="block p-2.5 w-full text-sm bg-stone-100 rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 text-portfolio border-portfolio"
+              required
+              aria-required="true"
             ></textarea>
           </div>
           <button
