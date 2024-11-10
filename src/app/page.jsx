@@ -53,12 +53,10 @@ export default function Home() {
             className="w-full h-full object-cover"
             src="/profile-image.webp"
             alt="Profile"
+            style={{ objectFit: "cover" }}
             width={192}
             height={192}
             priority
-            srcSet="/profile-image-small.webp 500w, /profile-image-medium.webp 1000w, /profile-image-large.webp 2000w"
-            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 30vw, 192px"
-            style={{ objectFit: "cover" }}
           />
         </div>
 
