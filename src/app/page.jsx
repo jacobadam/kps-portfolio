@@ -22,14 +22,12 @@ export default function Home() {
           href="/hero-image.webp"
           as="image"
           type="image/webp"
-          media="(min-width: 768px)"
         />
         <link
           rel="preload"
           href="/profile-image.webp"
           as="image"
           type="image/webp"
-          media="(min-width: 768px)"
         />
       </Head>
 
@@ -43,7 +41,7 @@ export default function Home() {
             style={{ objectFit: "cover" }}
             priority
             srcSet="/hero-image-small.webp 500w, /hero-image-medium.webp 1000w, /hero-image-large.webp 2000w"
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
           />
         </div>
 
