@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div id="about" className="relative overflow-hidden lg:mt-16">
@@ -44,10 +46,14 @@ export default function About() {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
+        <Image
           className="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full"
           src="/about-me.webp"
-          alt="Katie Shevlin"
+          alt="Portrait of Katie Shevlin"
+          width={3850}
+          height={2605}
+          priority
+          role="img"
         />
       </div>
     </div>
