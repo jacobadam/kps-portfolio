@@ -7,12 +7,30 @@ export const metadata = {
   description:
     "Professional writing, editing, SEO, and strategy services to elevate your brand. Get expert support to ensure your content has impact and meets your marketing goals.",
   openGraph: {
+    url: "https://katieshevlin.com",
+    type: "website",
     title: "Content Services by Katie Shevlin",
     description:
       "Professional writing, editing, SEO, and strategy services to elevate your brand. Get expert support to ensure your content has impact and meets your marketing goals.",
     images: [
       {
-        url: "/hero-image.webp",
+        url: "https://katieshevlin.com/hero-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Hero Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    domain: "katieshevlin.com",
+    url: "https://katieshevlin.com",
+    title: "Content Services by Katie Shevlin",
+    description:
+      "Professional writing, editing, SEO, and strategy services to elevate your brand. Get expert support to ensure your content has impact and meets your marketing goals.",
+    images: [
+      {
+        url: "https://katieshevlin.com/hero-image.webp",
         width: 1200,
         height: 630,
         alt: "Hero Image",
