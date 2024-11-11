@@ -36,7 +36,6 @@ export default function Contact() {
       id="contact-form"
       className="flex-grow"
       aria-labelledby="contact-title"
-      tabIndex="-1"
     >
       <header className="border-b border-gray-200">
         <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
