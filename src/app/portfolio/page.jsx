@@ -1,11 +1,19 @@
+import Image from "next/image";
+
 const Portfolio = () => {
   return (
     <section className="flex-grow">
-      <header className="border-b border-gray-200">
+      <header
+        className="border-b border-gray-200"
+        aria-labelledby="portfolio-header"
+      >
         <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex flex-row items-center justify-center gap-4">
             <div>
-              <h1 className="text-2xl font-bold text-portfolio sm:text-3xl text-center">
+              <h1
+                id="portfolio-header"
+                className="text-2xl font-bold text-portfolio sm:text-3xl text-center"
+              >
                 Portfolio
               </h1>
             </div>
@@ -14,22 +22,27 @@ const Portfolio = () => {
       </header>
 
       <div className="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6">
-        <div className="grid gap-8 grid-cols-1 xs:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {/* Article 1 */}
           <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-l font-bold text-portfolio">Technology</h2>
             </header>
-            <img
-              alt=""
-              src="/perfect-pizza.webp"
-              className="h-56 w-full object-cover"
-            />
+            <div className="relative w-full h-56">
+              <Image
+                alt="A slice of pizza with ingredients"
+                src="/perfect-pizza.webp"
+                layout="fill"
+                objectFit="cover"
+                className="object-cover"
+              />
+            </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
               <a
                 href="https://www.toptal.com/product-managers/ecommerce/customer-research-tool"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Read more about Perfect Pizza: Using a Digital Customer Research Tool to Measure Taste"
               >
                 <h3 className="text-lg font-medium text-portfolio">
                   Perfect Pizza: Using a Digital Customer Research Tool to
@@ -47,6 +60,7 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-auto inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+                aria-label="Read more about this article"
               >
                 Read more
                 <span
@@ -64,23 +78,26 @@ const Portfolio = () => {
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-l font-bold text-portfolio">Lifestyle</h2>
             </header>
-            <img
-              alt=""
-              src="/vancouver-coffee.webp"
-              className="h-56 w-full object-cover"
-            />
-
+            <div className="relative w-full h-56">
+              <Image
+                alt="A cup of coffee on a table in a café"
+                src="/vancouver-coffee.webp"
+                layout="fill"
+                objectFit="cover"
+                className="object-cover"
+              />
+            </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
               <a
                 href="https://www.pursuitmedia.co/2020/11/30/7-must-visit-coffee-shops-in-vancouver-canada/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Read more about 7 Must Visit Coffee Shops in Vancouver, Canada"
               >
                 <h3 className="text-lg font-medium text-portfolio">
                   7 Must Visit Coffee Shops in Vancouver, Canada
                 </h3>
               </a>
-
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 mb-4">
                 Whether it’s an essential part of your morning routine, a
                 hump-day treat, or you simply need a break from your desk, we
@@ -88,12 +105,12 @@ const Portfolio = () => {
                 this area–the city is home to a variety of big names, but
                 there’s an awesome selection of small, independent spots too.
               </p>
-
               <a
                 href="https://www.pursuitmedia.co/2020/11/30/7-must-visit-coffee-shops-in-vancouver-canada/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-auto inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+                aria-label="Read more about this article"
               >
                 Read more
                 <span
@@ -111,34 +128,37 @@ const Portfolio = () => {
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-l font-bold text-portfolio">Finance</h2>
             </header>
-            <img
-              alt=""
-              src="/vernon-hill.webp"
-              className="h-56 w-full object-cover"
-            />
-
+            <div className="relative w-full h-56">
+              <Image
+                alt="A portrait of Vernon Hill II"
+                src="/vernon-hill.webp"
+                layout="fill"
+                objectFit="cover"
+                className="object-cover"
+              />
+            </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
               <a
                 href="/metrobank-interview.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Read the interview with Vernon Hill II"
               >
                 <h3 className="text-lg font-medium text-portfolio">
                   A Capital Idea
                 </h3>
               </a>
-
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 mb-4">
                 Metro Bank is set to become the next big name in franchise
                 business lending. Katie Shevlin meets founder and chairman
                 Vernon Hill II
               </p>
-
               <a
                 href="/metrobank-interview.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-auto inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+                aria-label="Read more about this interview"
               >
                 Read more
                 <span
@@ -156,15 +176,26 @@ const Portfolio = () => {
             <header className="p-4 bg-gray-200 text-center">
               <h2 className="text-l font-bold text-portfolio">Healthcare</h2>
             </header>
-            <img alt="" src="/ai.webp" className="h-56 w-full object-cover" />
-
+            <div className="relative w-full h-56">
+              <Image
+                alt="A medical image with artificial intelligence interface"
+                src="/ai.webp"
+                layout="fill"
+                objectFit="cover"
+                className="object-cover"
+              />
+            </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
-              <a href="/hp.pdf" target="_blank" rel="noopener noreferrer">
+              <a
+                href="/hp.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read more about AI and the NHS Long Term Plan"
+              >
                 <h3 className="text-lg font-medium text-portfolio">
                   AI and the NHS Long Term Plan
                 </h3>
               </a>
-
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 mb-4">
                 Artificial intelligence (AI) is firmly embedded in modern life.
                 It is in our homes in the form of personal digital assistants,
@@ -173,12 +204,12 @@ const Portfolio = () => {
                 it may already feel, however, AI is still very much in its
                 infancy.
               </p>
-
               <a
                 href="/hp.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-auto inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+                aria-label="Read more about this article"
               >
                 Read more
                 <span
@@ -192,14 +223,20 @@ const Portfolio = () => {
           </article>
 
           {/* Article 5 */}
-          <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
+          <article
+            className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col"
+            aria-labelledby="current-affairs"
+          >
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-l font-bold text-portfolio">
+              <h2
+                id="current-affairs"
+                className="text-l font-bold text-portfolio"
+              >
                 Current Affairs
               </h2>
             </header>
             <img
-              alt=""
+              alt="Brexit image illustrating the editorial content"
               src="/brexit.webp"
               className="h-56 w-full object-cover"
             />
@@ -209,6 +246,7 @@ const Portfolio = () => {
                 href="https://www.nzherald.co.nz/bay-of-plenty-times/news/editorial-brexit-a-leap-into-unknown-and-here-be-monsters/KCEMVA7XN4F7WCJVDQBGHDUSCM/#google_vignette"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Read the editorial about Brexit"
               >
                 <h3 className="text-lg font-medium text-portfolio">
                   Editorial: Brexit a leap into unknown and 'here be monsters'
@@ -227,6 +265,7 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-auto inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+                aria-label="Read more about Brexit"
               >
                 Read more
                 <span
@@ -240,12 +279,17 @@ const Portfolio = () => {
           </article>
 
           {/* Article 6 */}
-          <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
+          <article
+            className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col"
+            aria-labelledby="business"
+          >
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-l font-bold text-portfolio">Business</h2>
+              <h2 id="business" className="text-l font-bold text-portfolio">
+                Business
+              </h2>
             </header>
             <img
-              alt=""
+              alt="Organizational change management and coaching in a business context"
               src="/coaching.webp"
               className="h-56 w-full object-cover"
             />
@@ -255,6 +299,7 @@ const Portfolio = () => {
                 href="https://www.toptal.com/project-managers/project-management-consultant/organizational-change-management-coaching"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Learn how to use coaching in organizational change management"
               >
                 <h3 className="text-lg font-medium text-portfolio">
                   How to Use Coaching in Organizational Change Management
@@ -272,6 +317,7 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-auto inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+                aria-label="Read more about coaching in organizational change management"
               >
                 Read more
                 <span
@@ -285,14 +331,20 @@ const Portfolio = () => {
           </article>
 
           {/* Article 7 */}
-          <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
+          <article
+            className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col"
+            aria-labelledby="diversity-inclusion"
+          >
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-l font-bold text-portfolio">
+              <h2
+                id="diversity-inclusion"
+                className="text-l font-bold text-portfolio"
+              >
                 Diversity and Inclusion
               </h2>
             </header>
             <img
-              alt=""
+              alt="Image representing gender imbalance in the workplace"
               src="/gender-imbalance.webp"
               className="h-56 w-full object-cover"
             />
@@ -301,6 +353,7 @@ const Portfolio = () => {
                 href="https://www.digitalhealth.net/2020/05/addressing-gender-imbalance-will-take-time-but-change-needs-to-start-now/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Learn more about addressing gender imbalance"
               >
                 <h3 className="text-lg font-medium text-portfolio">
                   Addressing Gender Imbalance Will Take Time But Change Needs To
@@ -319,6 +372,7 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-auto inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+                aria-label="Read more about addressing gender imbalance"
               >
                 Read more
                 <span
@@ -332,12 +386,17 @@ const Portfolio = () => {
           </article>
 
           {/* Article 8 */}
-          <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col">
+          <article
+            className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm flex flex-col"
+            aria-labelledby="trends"
+          >
             <header className="p-4 bg-gray-200 text-center">
-              <h2 className="text-l font-bold text-portfolio">Trends</h2>
+              <h2 id="trends" className="text-l font-bold text-portfolio">
+                Trends
+              </h2>
             </header>
             <img
-              alt=""
+              alt="Augmented reality marketing techniques"
               src="/ar-marketing.webp"
               className="h-56 w-full object-cover"
             />
@@ -346,6 +405,7 @@ const Portfolio = () => {
                 href="https://www.toptal.com/marketing/digital/augmented-reality-marketing"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Read more about how top brands are using AR marketing techniques"
               >
                 <h3 className="text-lg font-medium text-portfolio">
                   How Top Brands Are Using AR Marketing Techniques
@@ -364,6 +424,7 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-auto inline-flex items-center gap-1 text-sm font-medium text-portfolio"
+                aria-label="Read more about augmented reality marketing"
               >
                 Read more
                 <span
