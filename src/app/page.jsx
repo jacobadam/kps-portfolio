@@ -57,8 +57,6 @@ export default function Home() {
             width={192}
             height={192}
             priority
-            srcSet="/profile-image.webp 1x, /profile-image-mobile.webp 1.5x"
-            sizes="(max-width: 768px) 100vw, 192px"
           />
         </div>
 
