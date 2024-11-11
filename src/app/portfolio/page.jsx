@@ -34,6 +34,7 @@ const Portfolio = () => {
                 src="/perfect-pizza.webp"
                 fill={true}
                 style={{ objectFit: "cover" }}
+                loading="eager"
               />
             </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
