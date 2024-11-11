@@ -32,9 +32,8 @@ const Portfolio = () => {
               <Image
                 alt="A slice of pizza with ingredients"
                 src="/perfect-pizza.webp"
-                layout="fill"
-                objectFit="cover"
-                className="object-cover"
+                fill={true}
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
@@ -82,9 +81,8 @@ const Portfolio = () => {
               <Image
                 alt="A cup of coffee on a table in a café"
                 src="/vancouver-coffee.webp"
-                layout="fill"
-                objectFit="cover"
-                className="object-cover"
+                fill={true}
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
@@ -132,9 +130,8 @@ const Portfolio = () => {
               <Image
                 alt="A portrait of Vernon Hill II"
                 src="/vernon-hill.webp"
-                layout="fill"
-                objectFit="cover"
-                className="object-cover"
+                fill={true}
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
@@ -180,9 +177,8 @@ const Portfolio = () => {
               <Image
                 alt="A medical image with artificial intelligence interface"
                 src="/ai.webp"
-                layout="fill"
-                objectFit="cover"
-                className="object-cover"
+                fill={true}
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
@@ -235,12 +231,14 @@ const Portfolio = () => {
                 Current Affairs
               </h2>
             </header>
-            <img
-              alt="Brexit image illustrating the editorial content"
-              src="/brexit.webp"
-              className="h-56 w-full object-cover"
-            />
-
+            <div className="relative w-full h-56">
+              <Image
+                alt="Brexit image illustrating the editorial content"
+                src="/brexit.webp"
+                fill={true}
+                style={{ objectFit: "cover" }}
+              />
+            </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
               <a
                 href="https://www.nzherald.co.nz/bay-of-plenty-times/news/editorial-brexit-a-leap-into-unknown-and-here-be-monsters/KCEMVA7XN4F7WCJVDQBGHDUSCM/#google_vignette"
@@ -252,14 +250,12 @@ const Portfolio = () => {
                   Editorial: Brexit a leap into unknown and 'here be monsters'
                 </h3>
               </a>
-
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 mb-4">
                 "Should I stay or should I go?" asked The Clash in 1982. And, on
                 June 23, UK citizens will be asking themselves just that as they
                 walk into voting booths across Britain and make the
                 all-important decision on the UK's EU membership.
               </p>
-
               <a
                 href="https://www.nzherald.co.nz/bay-of-plenty-times/news/editorial-brexit-a-leap-into-unknown-and-here-be-monsters/KCEMVA7XN4F7WCJVDQBGHDUSCM/#google_vignette"
                 target="_blank"
@@ -288,12 +284,14 @@ const Portfolio = () => {
                 Business
               </h2>
             </header>
-            <img
-              alt="Organizational change management and coaching in a business context"
-              src="/coaching.webp"
-              className="h-56 w-full object-cover"
-            />
-
+            <div className="relative w-full h-56">
+              <Image
+                alt="Organizational change management and coaching in a business context"
+                src="/coaching.webp"
+                fill={true}
+                style={{ objectFit: "cover" }}
+              />
+            </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
               <a
                 href="https://www.toptal.com/project-managers/project-management-consultant/organizational-change-management-coaching"
@@ -305,13 +303,11 @@ const Portfolio = () => {
                   How to Use Coaching in Organizational Change Management
                 </h3>
               </a>
-
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 mb-4">
                 Whether it’s introducing a new organizational structure, tool,
                 or process, project managers are often agents of change. Help
                 team members adapt and thrive with these four strategies.
               </p>
-
               <a
                 href="https://www.toptal.com/project-managers/project-management-consultant/organizational-change-management-coaching"
                 target="_blank"
@@ -343,11 +339,14 @@ const Portfolio = () => {
                 Diversity and Inclusion
               </h2>
             </header>
-            <img
-              alt="Image representing gender imbalance in the workplace"
-              src="/gender-imbalance.webp"
-              className="h-56 w-full object-cover"
-            />
+            <div className="relative w-full h-56">
+              <Image
+                alt="Image representing gender imbalance in the workplace"
+                src="/gender-imbalance.webp"
+                fill={true}
+                style={{ objectFit: "cover" }}
+              />
+            </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
               <a
                 href="https://www.digitalhealth.net/2020/05/addressing-gender-imbalance-will-take-time-but-change-needs-to-start-now/"
@@ -360,13 +359,11 @@ const Portfolio = () => {
                   Start Now
                 </h3>
               </a>
-
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 mb-4">
                 Gender imbalance in digital health has long been debated and
                 Katie Shevlin from Inhealth Communications looks into why
                 addressing the issue will take time but has to be driven now.
               </p>
-
               <a
                 href="https://www.digitalhealth.net/2020/05/addressing-gender-imbalance-will-take-time-but-change-needs-to-start-now/"
                 target="_blank"
@@ -395,11 +392,14 @@ const Portfolio = () => {
                 Trends
               </h2>
             </header>
-            <img
-              alt="Augmented reality marketing techniques"
-              src="/ar-marketing.webp"
-              className="h-56 w-full object-cover"
-            />
+            <div className="relative w-full h-56">
+              <Image
+                alt="Augmented reality marketing techniques"
+                src="/ar-marketing.webp"
+                fill={true}
+                style={{ objectFit: "cover" }}
+              />
+            </div>
             <div className="p-4 sm:p-6 flex flex-col grow">
               <a
                 href="https://www.toptal.com/marketing/digital/augmented-reality-marketing"
@@ -411,14 +411,12 @@ const Portfolio = () => {
                   How Top Brands Are Using AR Marketing Techniques
                 </h3>
               </a>
-
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 mb-4">
                 Augmented reality is redefining how brands engage customers, and
                 top brands are offering exciting immersive experiences. Explore
                 current applications and what the future of AR in marketing
                 might hold.
               </p>
-
               <a
                 href="https://www.toptal.com/marketing/digital/augmented-reality-marketing"
                 target="_blank"
