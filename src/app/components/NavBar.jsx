@@ -11,35 +11,55 @@ const NavBar = () => {
     <div>
       <header className="bg-portfolio">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-          <a href="/" className="md:hidden">
-            <img src="/ks-logo.svg" alt="logo" className="h-12 w-12" />
+          <a href="/" className="md:hidden" aria-label="Homepage">
+            <img src="/ks-logo.svg" alt="Logo" className="h-12 w-12" />
           </a>
 
           <div className="flex flex-1 items-center justify-center">
-            <nav aria-label="Global" className="hidden md:block">
+            <nav aria-label="Primary navigation" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <Link href="/" className="text-stone-100">
+                  <Link
+                    href="/"
+                    className="text-stone-100"
+                    aria-label="Go to homepage"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="text-stone-100">
+                  <Link
+                    href="/about"
+                    className="text-stone-100"
+                    aria-label="Go to about page"
+                  >
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="text-stone-100">
+                  <Link
+                    href="/services"
+                    className="text-stone-100"
+                    aria-label="Go to services page"
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/portfolio" className="text-stone-100">
+                  <Link
+                    href="/portfolio"
+                    className="text-stone-100"
+                    aria-label="Go to portfolio page"
+                  >
                     Portfolio
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="text-stone-100">
+                  <Link
+                    href="/contact"
+                    className="text-stone-100"
+                    aria-label="Go to contact page"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -52,10 +72,11 @@ const NavBar = () => {
               href="https://www.linkedin.com/in/katie-shevlin90/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit LinkedIn profile"
             >
               <img
                 src="/linkedin-logo.svg"
-                alt="LinkedIn"
+                alt="LinkedIn logo"
                 className="h-8 w-8"
               />
             </a>
@@ -64,6 +85,9 @@ const NavBar = () => {
             <button
               onClick={toggleMenu}
               className="block rounded bg-portfolio p-2.5 text-stone-100 transition md:hidden"
+              aria-label="Toggle mobile menu"
+              aria-expanded={isMenuOpen ? "true" : "false"}
+              aria-controls="mobile-menu"
             >
               <span className="sr-only">Toggle menu</span>
               <svg
@@ -86,10 +110,23 @@ const NavBar = () => {
 
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-portfolio shadow-lg">
-            <ul className="flex flex-col items-center gap-6 text-sm p-4">
+          <div
+            id="mobile-menu"
+            className="md:hidden bg-portfolio shadow-lg"
+            role="region"
+            aria-live="assertive"
+          >
+            <ul
+              className="flex flex-col items-center gap-6 text-sm p-4"
+              role="navigation"
+            >
               <li>
-                <Link href="/" className="text-stone-100" onClick={toggleMenu}>
+                <Link
+                  href="/"
+                  className="text-stone-100"
+                  onClick={toggleMenu}
+                  aria-label="Go to homepage"
+                >
                   Home
                 </Link>
               </li>
@@ -98,6 +135,7 @@ const NavBar = () => {
                   href="/about"
                   className="text-stone-100"
                   onClick={toggleMenu}
+                  aria-label="Go to about page"
                 >
                   About
                 </Link>
@@ -107,6 +145,7 @@ const NavBar = () => {
                   href="/services"
                   className="text-stone-100"
                   onClick={toggleMenu}
+                  aria-label="Go to services page"
                 >
                   Services
                 </Link>
@@ -116,6 +155,7 @@ const NavBar = () => {
                   href="/portfolio"
                   className="text-stone-100"
                   onClick={toggleMenu}
+                  aria-label="Go to portfolio page"
                 >
                   Portfolio
                 </Link>
@@ -125,6 +165,7 @@ const NavBar = () => {
                   href="/contact"
                   className="text-stone-100"
                   onClick={toggleMenu}
+                  aria-label="Go to contact page"
                 >
                   Contact
                 </Link>
