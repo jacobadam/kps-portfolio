@@ -50,7 +50,7 @@ export default function Home() {
         {/* Profile Image Overlay */}
         <div className="absolute w-48 h-48 rounded-full border border-stone-100 top-[15vh] left-1/2 transform -translate-x-1/2 overflow-hidden">
           <Image
-            className="w-full h-full object-cover"
+            className="w-full h-full"
             src="/profile-image.webp"
             alt="Profile"
             style={{ objectFit: "cover" }}
