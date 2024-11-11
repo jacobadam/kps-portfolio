@@ -40,7 +40,6 @@ export default function Home() {
             fill="true"
             style={{ objectFit: "cover" }}
             priority
-            srcSet="/hero-image-small.webp 500w, /hero-image-medium.webp 1000w, /hero-image-large.webp 2000w"
             sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
           />
         </div>
