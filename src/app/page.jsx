@@ -51,11 +51,13 @@ export default function Home() {
         <div className="absolute w-48 h-48 rounded-full border border-stone-100 top-[15vh] left-1/2 transform -translate-x-1/2 overflow-hidden">
           <Image
             className="w-full h-full"
-            src="/profile-image.webp"
+            src="/profile-image1.webp"
             alt="Profile"
             style={{ objectFit: "cover" }}
             width={192}
             height={192}
+            sizes="(max-width: 768px) 100vw, 192px"
+            srcSet="/profile-image-mobile.webp 600w, /profile-image1.webp 1200w"
             priority
           />
         </div>
