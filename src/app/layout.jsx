@@ -18,9 +18,7 @@ export const metadata = {
   robots: "index, follow",
   author: "Katie Shevlin",
   language: "en",
-  viewport: "width=device-width, initial-scale=1.0",
   canonical: "https://www.katieshevlin.com",
-
   openGraph: {
     url: "https://www.katieshevlin.com",
     type: "website",
