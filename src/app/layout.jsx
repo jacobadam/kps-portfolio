@@ -71,6 +71,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <Script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-4SB9H3JJVN"
           strategy="afterInteractive"
         />
