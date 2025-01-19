@@ -17,8 +17,8 @@ const NavBar = () => {
 
           <div className="flex flex-1 items-center justify-center">
             <nav aria-label="Primary navigation" className="hidden md:block">
-              <ul className="flex items-center text-sm justify-center">
-                <li className="text-center w-20">
+              <ul className="flex items-center text-sm justify-center space-x-8 ml-5">
+                <li className="text-center">
                   <Link
                     href="/"
                     className="text-stone-100"
@@ -27,7 +27,7 @@ const NavBar = () => {
                     Home
                   </Link>
                 </li>
-                <li className="text-center w-20">
+                <li className="text-center">
                   <Link
                     href="/about"
                     className="text-stone-100"
@@ -36,7 +36,7 @@ const NavBar = () => {
                     About
                   </Link>
                 </li>
-                <li className="text-center w-20">
+                <li className="text-center">
                   <Link
                     href="/services"
                     className="text-stone-100"
@@ -45,7 +45,7 @@ const NavBar = () => {
                     Services
                   </Link>
                 </li>
-                <li className="text-center w-20">
+                <li className="text-center">
                   <Link
                     href="/portfolio"
                     className="text-stone-100"
@@ -54,7 +54,7 @@ const NavBar = () => {
                     Portfolio
                   </Link>
                 </li>
-                <li className="text-center w-20">
+                <li className="text-center">
                   <Link
                     href="/contact"
                     className="text-stone-100"
