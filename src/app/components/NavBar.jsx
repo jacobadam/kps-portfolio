@@ -8,17 +8,17 @@ const NavBar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div>
+    <>
       <header className="bg-portfolio">
-        <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-6 px-4 sm:px-6 lg:px-8">
           <a href="/" className="md:invisible" aria-label="Homepage">
             <img src="/ks-logo.svg" alt="Logo" className="h-8 w-8" />
           </a>
 
           <div className="flex flex-1 items-center justify-center">
             <nav aria-label="Primary navigation" className="hidden md:block">
-              <ul className="flex items-center gap-6 text-sm">
-                <li>
+              <ul className="flex items-center text-sm justify-center">
+                <li className="text-center w-20">
                   <Link
                     href="/"
                     className="text-stone-100"
@@ -27,7 +27,7 @@ const NavBar = () => {
                     Home
                   </Link>
                 </li>
-                <li>
+                <li className="text-center w-20">
                   <Link
                     href="/about"
                     className="text-stone-100"
@@ -36,7 +36,7 @@ const NavBar = () => {
                     About
                   </Link>
                 </li>
-                <li>
+                <li className="text-center w-20">
                   <Link
                     href="/services"
                     className="text-stone-100"
@@ -45,7 +45,7 @@ const NavBar = () => {
                     Services
                   </Link>
                 </li>
-                <li>
+                <li className="text-center w-20">
                   <Link
                     href="/portfolio"
                     className="text-stone-100"
@@ -54,7 +54,7 @@ const NavBar = () => {
                     Portfolio
                   </Link>
                 </li>
-                <li>
+                <li className="text-center w-20">
                   <Link
                     href="/contact"
                     className="text-stone-100"
@@ -174,7 +174,7 @@ const NavBar = () => {
           </div>
         )}
       </header>
-    </div>
+    </>
   );
 };
 
