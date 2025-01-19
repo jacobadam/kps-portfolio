@@ -11,8 +11,8 @@ const NavBar = () => {
     <div>
       <header className="bg-portfolio">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-          <a href="/" className="md:hidden" aria-label="Homepage">
-            <img src="/ks-logo.svg" alt="Logo" className="h-12 w-12" />
+          <a href="/" className="md:invisible" aria-label="Homepage">
+            <img src="/ks-logo.svg" alt="Logo" className="h-8 w-8" />
           </a>
 
           <div className="flex flex-1 items-center justify-center">
