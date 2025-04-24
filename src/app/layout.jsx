@@ -64,12 +64,19 @@ export const metadata = {
   icons: {
     icon: "/ks-logo.ico",
   },
+  verification: {
+    google: "yvEo-pqgW1kr_MBEKzqV5uFZ7t3DMOv_uLXHsbnBrwk",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen">
+        <meta
+          name="google-site-verification"
+          content="yvEo-pqgW1kr_MBEKzqV5uFZ7t3DMOv_uLXHsbnBrwk"
+        />
         <NavBar />
         <main className="flex-grow">{children}</main>
         <Footer />
