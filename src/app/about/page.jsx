@@ -37,9 +37,9 @@ export default function About() {
                 <br />
                 Originally from the UK, I’ve been lucky enough to live in
                 several countries, including New Zealand, Mexico, and -
-                currently - Canada, where I’m based in a small mountain town
-                called Nelson. In my free time I like to hike, ski, swim, and
-                kayak, depending on the season!
+                currently - Canada, where I’m based in a small B.C. town called
+                Kimberley. In my free time I like to hike, ski, swim, and kayak,
+                depending on the season!
               </p>
             </div>
           </main>
