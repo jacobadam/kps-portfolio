@@ -10,7 +10,16 @@ const Footer = () => {
           className="text-xs sm:text-sm text-stone-100 pl-4"
           aria-live="polite"
         >
-          © {currentYear} Greenhouse Web Designs. All Rights Reserved.
+          © {currentYear}{" "}
+          <a
+            href="https://www.greenhousewebdesigns.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-stone-300 transition-colors"
+          >
+            Greenhouse Web Designs
+          </a>
+          . All Rights Reserved.
         </span>
       </div>
     </footer>
